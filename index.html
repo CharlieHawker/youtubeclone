@@ -10,12 +10,40 @@
     <div class="container">
       <div class="row m-3">
         <div class="col-8">
+
           <video controls autoplay class="w-100">
             <source type="video/mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
             Poor you, buy a Mac
           </video>
           <h1>Awesome Bunny Video</h1>
+
+          <form id="commentForm">
+            <div class="form-group">
+              <label>Who are you?</label>
+              <input type="text" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea id="comment" class="form-control" placeholder="type your comments in here."></textarea>
+            </div>
+            <input type="submit" class="btn btn-outline-dark">
+          </form>
+
+          <div id="comments">
+            <div class="row mt-3">
+              <div class="col-2">
+                <img src="http://fillmurray.com/100/100" class="rounded-circle img-fluid" alt="bill murray">
+              </div>
+              <div class="col">
+                <b>Username</b>
+                <p>- bla bla soft bunney bla bla</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- this is the sidebar -->
+
         <div class="col-4">
           <div class="row">
             <div class="col">
@@ -33,5 +61,35 @@
         </div>
       </div>
     </div>
+
+<!-- our cool java script -->
+  <script>
+
+  // when the form is submitted
+  var form = document.getElementById('commentForm');
+// perform something on submit
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page from re-loading upon submit
+    // get Username
+    var username = document.getElementById("username");
+    // get comment
+    var comment=document.getElementById("comment");
+    // build our comment template elements
+    var newcomment=document.createElement("div");
+    newcomment.classList="row mt-3";
+
+    newcomment.innerHTML='<div class="col-2"><img src="http://fillmurray.com/100/100" class="rounded-circle img-fluid" alt="bill murray"></div><div class="col"><b>'+username.value+'</b><p>'+comment.value+'</p></div>'
+    //append that to our comments list to display it on the page
+    var commentList=document.getElementById("comments");
+    commentList.appendChild(newcomment);
+    //reset our formm fields so they are empty again
+      username.value="";
+      comment.value="";
+
+  })
+
+
+  </script>
+
   </body>
 </html>
