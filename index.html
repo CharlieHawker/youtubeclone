@@ -31,14 +31,24 @@
             </form>
 
             <div id="comments">
-              <article class="row mt-3">
+              <article class="row mt-3" itemscope itemtype="http://schema.org/UserComments">
+
                 <div class="col-2">
                   <img src="http://fillmurray.com/100/100" class="rounded-circle" alt="bill murray">
                 </div>
+
                 <div class="col">
-                  <strong>Username</strong>
-                  <p>- bla bla soft bunney bla bla</p>
+
+                  <strong itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">
+                      Username
+                    </span>
+                  </strong>
+
+                  <p itemprop="commentText">- bla bla soft bunney bla bla</p>
+
                 </div>
+
               </article>
             </div>
           </section>
@@ -47,6 +57,7 @@
         <!-- this is the sidebar -->
 
         <aside class="col-4">
+
           <article class="row">
             <div class="col">
               <img src="https://source.unsplash.com/random/1600x900" class="img-fluid">
