@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Awesome youtube video player from the Team at Experience Haus">
     <title>awesome youtube player</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
@@ -9,7 +10,7 @@
   <body>
     <div class="container">
       <div class="row m-3">
-        <div class="col-8">
+        <article class="col-8">
 
           <video controls autoplay class="w-100">
             <source type="video/mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
@@ -17,35 +18,36 @@
           </video>
           <h1>Awesome Bunny Video</h1>
 
-          <form id="commentForm">
-            <div class="form-group">
-              <label>Who are you?</label>
-              <input type="text" id="username" class="form-control">
-            </div>
-            <div class="form-group">
-              <textarea id="comment" class="form-control" placeholder="type your comments in here."></textarea>
-            </div>
-            <input type="submit" class="btn btn-outline-dark">
-          </form>
-
-          <div id="comments">
-            <div class="row mt-3">
-              <div class="col-2">
-                <img src="http://fillmurray.com/100/100" class="rounded-circle img-fluid" alt="bill murray">
+          <section>
+            <form id="commentForm">
+              <div class="form-group">
+                <label>Who are you?</label>
+                <input type="text" id="username" class="form-control">
               </div>
-              <div class="col">
-                <b>Username</b>
-                <p>- bla bla soft bunney bla bla</p>
+              <div class="form-group">
+                <textarea id="comment" class="form-control" placeholder="type your comments in here."></textarea>
               </div>
-            </div>
-          </div>
+              <input type="submit" class="btn btn-outline-dark">
+            </form>
 
-        </div>
+            <div id="comments">
+              <article class="row mt-3">
+                <div class="col-2">
+                  <img src="http://fillmurray.com/100/100" class="rounded-circle" alt="bill murray">
+                </div>
+                <div class="col">
+                  <strong>Username</strong>
+                  <p>- bla bla soft bunney bla bla</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </article>
 
         <!-- this is the sidebar -->
 
-        <div class="col-4">
-          <div class="row">
+        <aside class="col-4">
+          <article class="row">
             <div class="col">
               <img src="https://source.unsplash.com/random/1600x900" class="img-fluid">
             </div>
@@ -54,11 +56,11 @@
               <small class="text-muted">This was taken by us <br>
               no one has seen it.</small>
             </div>
-          </div>
+          </article>
           <p>
             This is a Youtube Clone
           </p>
-        </div>
+        </aside>
       </div>
     </div>
 
