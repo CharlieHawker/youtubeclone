@@ -1,0 +1,39 @@
+body {
+  font-family: helvetica, arial, "comic sans", sans-serif;
+}
+img, video{
+  width:100%
+}
+h6 {
+  margin: 0px 0px 5px 0px;
+}
+input[type="text"], textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+}
+.container {
+  width: 1500px;
+  overflow: hidden;
+}
+.row {
+  display: flex
+}
+.col-4 {
+    width: 20%;
+    margin-left: 30px;
+}
+.col-8 {
+  width: 80%;
+}
+.imgcol {
+  width: 20%;
+}
+.textcol {
+  margin-left: 10px;
+  width: 80%;
+}
+.btn {
+  float: right;
+  margin: 5px
+}
