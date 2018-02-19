@@ -13,11 +13,22 @@ input[type="text"], textarea {
   margin: 5px 0px;
 }
 
+.menu {
+  list-style: none;
+}
+
+.menu a:hover {
+  color: tomato
+}
 
 @media screen and (min-width: 772px) {
   .container {
     max-width: 1200px;
     overflow: hidden;
+  }
+  .menu li {
+    display: inline;
+    padding: 0 5px 0 5px;
   }
   .row {
     display: flex
