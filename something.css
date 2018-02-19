@@ -14,7 +14,30 @@ input[type="text"], textarea {
 }
 
 .menu {
+  display: none;
   list-style: none;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  cursor:
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+input[name="hamburger"] {
+  visibility: hidden;
+}
+
+input[name="hamburger"]:checked + .menu {
+  display: block;
 }
 
 .menu a:hover {
@@ -25,6 +48,15 @@ input[type="text"], textarea {
   .container {
     max-width: 1200px;
     overflow: hidden;
+  }
+  .hamburger {
+    display: none;
+  }
+  input[name="hamburger"] {
+    display: none;
+  }
+  .menu {
+    display: block;
   }
   .menu li {
     display: inline;
