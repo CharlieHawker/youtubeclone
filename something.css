@@ -12,19 +12,42 @@ input[type="text"], textarea {
   width: 100%;
   margin: 5px 0px;
 }
-.container {
-  width: 1500px;
-  overflow: hidden;
+
+
+@media screen and (min-width: 772px) {
+  .container {
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .row {
+    display: flex
+  }
+  .col-4 {
+      width: 20%;
+      margin-left: 30px;
+  }
+  .col-8 {
+    width: 80%;
+  }
 }
-.row {
-  display: flex
+
+
+.comment {
+  display: flex;
+  margin-top: 10px;
+  padding: 0px 5px;
 }
-.col-4 {
-    width: 20%;
-    margin-left: 30px;
+.comment-image {
+  width: 20%;
+  margin-right: 10px;
 }
-.col-8 {
+.comment-info {
   width: 80%;
+}
+
+
+.related-video {
+  display: flex
 }
 .imgcol {
   width: 20%;
