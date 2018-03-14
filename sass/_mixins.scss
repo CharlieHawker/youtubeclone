@@ -1,0 +1,8 @@
+@mixin border-radius($border-size) {
+  -webkit-border-radius: $border-size;
+  border-radius: $border-size;
+}
+@mixin scale-float($scale){
+  width: $scale;
+  float: left;
+}

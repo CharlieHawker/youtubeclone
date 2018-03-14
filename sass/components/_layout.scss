@@ -1,0 +1,18 @@
+@media screen and (min-width: $min-desktopwidth) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  .row {
+    // display: flex
+  }
+  .col-4 {
+      box-sizing: border-box;
+      padding-left: 30px;
+      @include scale-float(30%);
+  }
+  .col-8 {
+    @include scale-float(70%);
+  }
+}

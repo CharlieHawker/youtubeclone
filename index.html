@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Awesome youtube video player from the Team at Experience Haus">
     <title>awesome youtube player</title>
-    <link rel="stylesheet" href="something.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <meta name="viewport" content="width=device-width">
   </head>
@@ -119,33 +119,7 @@
     </div>
 
 <!-- our cool java script -->
-  <script>
-
-  // when the form is submitted
-  var form = document.getElementById('commentForm');
-// perform something on submit
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // stop page from re-loading upon submit
-    // get Username
-    var username = document.getElementById("username");
-    // get comment
-    var comment=document.getElementById("comment");
-    // build our comment template elements
-    var newcomment=document.createElement("div");
-    newcomment.classList="row mt-3";
-
-    newcomment.innerHTML='<div class="col-2"><img src="http://fillmurray.com/100/100" class="rounded-circle img-fluid" alt="bill murray"></div><div class="col"><b>'+username.value+'</b><p>'+comment.value+'</p></div>'
-    //append that to our comments list to display it on the page
-    var commentList=document.getElementById("comments");
-    commentList.appendChild(newcomment);
-    //reset our formm fields so they are empty again
-      username.value="";
-      comment.value="";
-
-  })
-
-
-  </script>
+  <script src="ourCoolJavaScript.js"></script>
 
   </body>
 </html>

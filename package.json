@@ -1,0 +1,23 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "a you tube clone",
+  "main": "ourCoolJavaScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieHawker/youtubeclone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlieHawker/youtubeclone/issues"
+  },
+  "homepage": "https://github.com/CharlieHawker/youtubeclone#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

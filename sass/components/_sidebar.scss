@@ -1,0 +1,11 @@
+.related-video {
+//  display: flex
+}
+.imgcol {
+  @include scale-float(20%);
+}
+.textcol {
+  padding-left: 10px;
+  @extend %border-box;
+  @include scale-float(80%);
+}

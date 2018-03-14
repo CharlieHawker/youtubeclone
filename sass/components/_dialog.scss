@@ -1,0 +1,25 @@
+.dialog {
+  @extend %border-box;
+  background-color: $dialog-background;
+  padding: 10px;
+  text-align: center;
+  color: $dialog-text;
+  z-index: 99999;
+}
+@media (min-width: $min-desktopwidth) {
+  .dialog{
+    width: 50%;
+    height: 10%;
+    border: 1px $dialog-bordercolour;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+  }
+}
+
+input[name="dialog-toggle"]:checked + .dialog {
+  display: none;
+}
+input[name="dialog-toggle"] {
+  visibility: hidden;
+}

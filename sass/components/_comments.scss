@@ -1,0 +1,13 @@
+.comment {
+//  display: flex;
+  margin-top: 10px;
+  padding: 0px $margin;
+}
+.comment-image {
+  @extend %border-box;
+  padding-right: 10px;
+  @include scale-float(20%);
+}
+.comment-info {
+  @include scale-float(80%);
+}

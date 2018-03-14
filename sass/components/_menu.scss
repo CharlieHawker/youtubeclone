@@ -1,0 +1,45 @@
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: $bar-background;
+  margin-bottom: $margin;
+}
+
+input[name="hamburger"] {
+  visibility: hidden;
+}
+
+input[name="hamburger"]:checked + .menu {
+  display: block;
+}
+
+.menu a:hover {
+  color: $brand-primarycolour;
+}
+
+@media screen and (min-width: $min-desktopwidth) {
+  .hamburger {
+    display: none;
+  }
+  input[name="hamburger"] {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menu li {
+    display: inline;
+    padding: 0 $margin 0 $margin;
+  }
+}

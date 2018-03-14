@@ -1,0 +1,29 @@
+@import 'settings';
+@import 'mixins';
+%border-box{
+  box-sizing: border-box;
+}
+@import 'components/dialog';
+@import 'components/menu';
+@import 'components/layout';
+@import 'components/comments';
+@import 'components/sidebar';
+
+body {
+  font-family: $font;
+}
+img, video{
+  width:100%
+}
+h6 {
+  margin: 0px 0px $margin 0px;
+}
+input[type="text"], textarea {
+  display: block;
+  width: 100%;
+  margin: $margin 0px;
+}
+.btn {
+  float: right;
+  margin: $margin
+}
