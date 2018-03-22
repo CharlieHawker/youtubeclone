@@ -19,5 +19,9 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-imageoptim": "^1.0.9",
+    "gulp-uglify": "^3.0.0"
   }
 }
